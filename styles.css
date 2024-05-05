@@ -1,0 +1,103 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: monospace;
+    background: rgb(86,68,93);
+    background: linear-gradient(rgba(86,68,93,1) 0%, rgba(20,0,28,1) 100%);
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 50%;
+    border-left: 4px solid #f6ad00;
+    border-top: 4px solid #e92d18;
+    border-right: 4px solid #3374f1;
+    border-bottom: 4px solid #249a41;
+    box-shadow: 0px 10px 10px #00000066;
+    transition: all ease .25s;
+}
+
+.avatar:hover {
+    /*margin-top: -5px;
+    border-right: 4px solid #f6ad00;
+    border-bottom: 4px solid #e92d18;
+    border-left: 4px solid #3374f1;
+    border-top: 4px solid #249a41;*/
+    transform:rotate(360deg);
+}
+
+.info {
+    text-transform: lowercase;
+    /*padding-top:0px;
+    transition: all ease .5s;*/
+}
+
+/*.avatar:hover~.info {
+    padding-top:5px;
+}*/
+
+.card {
+    width: 300px;
+    height: 360px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: #58641D;
+    color: #002400;
+    border-radius: 50px;
+    border: 10px solid #7B904B;
+    box-shadow: 0 10px 10px #00000066,
+    inset 0 1px 2px 1px #fffa;
+    animation: hovering ease-in-out 3s infinite;
+    animation-play-state: running;
+}
+
+.card:hover {
+    animation-play-state: paused;
+    box-shadow: 0px 0px 20px 5px #00000066,
+    inset 0 -1px 0 1px #000a;;
+}
+
+@keyframes hovering {
+    50% {
+        margin-top: -20px;
+    }
+}
+
+.name {
+    color: #fff;
+}
+
+.info a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #fff;
+}
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
